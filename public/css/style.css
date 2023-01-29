@@ -239,10 +239,9 @@ li:hover i{
     top:20px;
 }
 
-.banner-btn{
+button{
     outline:none;
     border:none;
-    text-decoration: none;
     cursor:pointer;
     font-size:25px;
     font-weight:400;
@@ -256,12 +255,12 @@ li:hover i{
     box-shadow: 0 15px 10px rgba(0,0,0,0.3)
 }
 
-.banner-btn a{
+button a{
     color:#fff;
     text-decoration: none;
 }
 
-.banner-btn:hover{
+button:hover{
     /* background-color:#44836B; */
     opacity: 80%;
 }
