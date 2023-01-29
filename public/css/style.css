@@ -189,7 +189,8 @@ li:hover i{
     width: 100%;
     height: calc(100vh - 80px);
     justify-content: center;
-    align-items: center;
+    align-items: top;
+    /* margin-top: 10%; */
     padding: 0 10%;
     overflow:hidden;
     font-family: 'Poppins', sans-serif;
@@ -227,21 +228,24 @@ li:hover i{
     font-weight: 800;
     color:#3d535f;
 }
-
 .multitext{
     color:#f3f5f8;
     text-transform: capitalize;
 }
 
+.banner{
+    margin-top: 10%;
+}
+
 .btns{
     width: 100%;
     position:relative;
-    top:20px;
+    margin-top:6%;
 }
 
-button{
-    outline:none;
-    border:none;
+.banner-btn{
+    /* outline:none;
+    border:none; */
     cursor:pointer;
     font-size:25px;
     font-weight:400;
@@ -255,12 +259,13 @@ button{
     box-shadow: 0 15px 10px rgba(0,0,0,0.3)
 }
 
-button a{
+
+.banner-btn{
     color:#fff;
     text-decoration: none;
 }
 
-button:hover{
+.banner-btn:hover{
     /* background-color:#44836B; */
     opacity: 80%;
 }
