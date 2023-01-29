@@ -1,5 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=Chela+One&family=Dela+Gothic+One&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Fredericka+the+Great&family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Nabla&family=Oi&family=Oswald:wght@200;300;400;500;600;700&family=Press+Start+2P&family=Rampart+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=Chela+One&family=Dela+Gothic+One&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Fredericka+the+Great&family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Nabla&family=Oi&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rampart+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
 font-family: 'Anton', sans-serif;
@@ -14,6 +14,7 @@ font-family: 'Martian Mono', monospace;
 font-family: 'Nabla', cursive;
 font-family: 'Oi', cursive;
 font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-family: 'Press Start 2P', cursive;
 font-family: 'Rampart One', cursive;
 font-family: 'Roboto', sans-serif;
@@ -28,15 +29,27 @@ font-family: 'Source Code Pro', monospace;
 }
 
 body{
-    height:100vh;
-    /* background-color: #eeeeee; */
-    background: linear-gradient(135deg, #24ff72,#2196f3);
+    overflow:scroll;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    background-color: #f3f5f8;
+    background-image: url("../items/bg.png");
+    background-image: url("../items/bg.png");
+    background-size:auto 100vh;
+    background-repeat: no-repeat;
+    background-position:right;
     display:flex;
     justify-content: left;
     align-items: center;
 }
 
-p{
+/* ================ navigation bar ==================== */
+
+.foot-label,
+.label{
     font-family: 'Encode Sans', sans-serif;
     font-weight:500;
     transition: all 0.3s ease-out;
@@ -51,7 +64,7 @@ p{
 
 .nav-bar{
     width:60px;
-    height:90%;
+    height:90vh;
     /* background-color:#44836B; */
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
     backdrop-filter: blur(10px);
@@ -66,7 +79,7 @@ p{
 }
 
 .nav-bar:hover{
-    width: 120px;
+    width: 150px;
     border-radius:60px;
 }
 
@@ -165,6 +178,87 @@ li:hover i{
     white-space:nowrap;
     transition: all .2s ease-out;
 }
+
+/* ================ introduction ==================== */
+
+.wrapper{
+    display:flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow:hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cols{
+    width: 100%;
+}
+
+.cols0{
+    z-index: 5;
+}
+
+.topline{
+    display:block;
+    position:relative;
+    font-size:35px;
+    letter-spacing: 5px;
+    color:#3d555f;
+}
+
+.topline::after{
+    position:absolute;
+    content:'';
+    height:4px;
+    width:45px;
+    bottom:10px;
+    background-color: #44836B;
+}
+
+.container h1{
+    display: block;
+    font-size: 6em;
+    font-weight: 800;
+    color:#3d535f;
+}
+
+#web,
+.multitext{
+    color:#44836B;
+    text-transform: capitalize;
+}
+
+.btns{
+    width: 100%;
+    position:relative;
+    /* left:150px; */
+}
+
+button{
+    outline:none;
+    border:none;
+    cursor:pointer;
+    font-size:25px;
+    font-weight:400;
+    color:#fff;
+    background-color:#3d535f;
+    padding:8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.3)
+}
+
+button:hover{
+    /* background-color:#44836B; */
+    opacity: 80%;
+}
+
+
+
+/* ================ animation ==================== */
 
 @keyframes jitter {
     0% {
