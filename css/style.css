@@ -1,0 +1,174 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=Chela+One&family=Dela+Gothic+One&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Fredericka+the+Great&family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Nabla&family=Oi&family=Oswald:wght@200;300;400;500;600;700&family=Press+Start+2P&family=Rampart+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Carter One', cursive;
+font-family: 'Chela One', cursive;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Encode Sans', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'M PLUS 1 Code', sans-serif;
+font-family: 'M PLUS Code Latin', sans-serif;
+font-family: 'Martian Mono', monospace;
+font-family: 'Nabla', cursive;
+font-family: 'Oi', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Rampart One', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Source Code Pro', monospace;
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background-color: #fff;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+p{
+    font-family: 'Encode Sans', sans-serif;
+    font-weight:400;
+    transition: all 0.3s ease-out;
+}
+
+.icon{
+    font-size:26px !important;
+    color:#fff;
+    line-height: 50px;
+    text-align:center;
+}
+
+.nav-bar{
+    width:60px;
+    height:90%;
+    background-color:#44836B;
+    border-radius:30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-left: 2rem;
+    transition: all 0.3s ease-out;
+    overflow:hidden;
+}
+
+.nav-bar:hover{
+    width: 120px;
+    border-radius:60px;
+}
+
+.nav-bar:hover>ul>li p{
+    display: block;
+}
+
+/* expand icon control */
+.expand-icon{
+    width:100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#out,
+#in{
+    color:#fff;
+    font-size: 32px !important;
+    animation: jitter 0.3s linear forwards;
+}
+
+#in{
+    display:none;
+}
+
+.nav-bar:hover #out{
+    display:none;
+}
+
+.nav-bar:hover #in{
+    display:block;
+}
+
+/* .nav-bar:hover li>a{
+    justify-content:left;
+    margin-left:12%;
+} */
+
+ul{
+    width:100%;
+    height:70%;
+}
+
+li{
+    list-style: none;
+}
+
+li>a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:20%;
+    text-decoration:none;
+}
+
+li:hover{
+    background-color: #6bb598;
+    cursor:pointer;
+}
+
+li:hover .label,
+li:hover .foot-label,
+li:hover i{
+    color:white;
+}
+
+li:hover i{
+    animation:jitter .3s linear forwards;
+}
+
+.label{
+    display:none;
+    padding-left:5px;
+    color:white;
+    white-space:nowrap;
+    transition: all .2s ease-out;
+}
+
+.foot-icon{
+    font-size:26px !important;
+    color:#fff;
+    line-height: 50px;
+    text-align:center;
+}
+
+.social-icon{
+    width:100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.foot-label{
+    display:none;
+    padding-left:5px;
+    color:white;
+    white-space:nowrap;
+    transition: all .2s ease-out;
+}
+
+@keyframes jitter {
+    0% {
+        transform: scale(1.2) rotate(10deg);
+    }
+    50% {
+        transform: scale(0.8) rotate(-10deg);
+    }
+    0% {
+        transform: scale(1.0) rotate(0deg);
+    }
+}
+
