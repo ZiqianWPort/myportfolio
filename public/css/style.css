@@ -30,12 +30,12 @@ font-family: 'Source Code Pro', monospace;
 
 body{
     overflow:scroll;
+    background: linear-gradient(135deg,#24ff72,#2196f3);
 }
 
 .container{
     width:100%;
     min-height:100vh;
-    background-color: #f3f5f8;
     background-image: url("../items/bg.png");
     background-image: url("../items/bg.png");
     background-size:auto 100vh;
@@ -57,7 +57,7 @@ body{
 
 .icon{
     font-size:26px !important;
-    color:#44836B;
+    color:#3d555f;
     line-height: 50px;
     text-align:center;
 }
@@ -83,8 +83,10 @@ body{
     border-radius:60px;
 }
 
-.nav-bar:hover>ul>li p{
+.nav-bar:hover>ul>li .foot-label,
+.nav-bar:hover>ul>li .label{
     display: block;
+    transition: all 0.5s;
 }
 
 /* expand icon control */
@@ -113,6 +115,7 @@ body{
     display:block;
 }
 
+/* align icons to left when nav bar expands */
 /* .nav-bar:hover li>a{
     justify-content:left;
     margin-left:12%;
@@ -225,9 +228,8 @@ li:hover i{
     color:#3d535f;
 }
 
-#web,
 .multitext{
-    color:#44836B;
+    color:#f3f5f8;
     text-transform: capitalize;
 }
 
@@ -245,6 +247,7 @@ button{
     font-weight:400;
     color:#fff;
     background-color:#3d535f;
+    border-radius: 30px;
     padding:8px 14px;
     margin: 40px 5px;
     letter-spacing: 2px;
