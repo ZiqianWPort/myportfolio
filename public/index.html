@@ -1,89 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- unicon font -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=Chela+One&family=Dela+Gothic+One&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Fredericka+the+Great&family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Nabla&family=Oi&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rampart+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ZW Folio.</title>
+</head>
+<body>
+    <div class="container">
+    
+        <nav class="nav-bar">
+            <div class="expand-icon">
+                <i id="out" class="uil uil-angle-double-right"></i>
+                <i id="in" class="uil uil-angle-double-left"></i>
+            </div>
+            <ul class="top-icon">
+                <li>
+                    <a href="index.html">
+                        <i class="icon fa-solid fa-house"></i>
+                        <p class="label">Home</p>
+                </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="icon fa-solid fa-user"></i>
+                        <p class="label">About</p>
+                </a>
+                </li>
+                <li>
+                    <a href="skills.html">
+                        <i class="icon fa-solid fa-file-lines"></i>
+                        <p class="label">Skills</p>
+                </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <i class="icon fa-solid fa-folder-open"></i>
+                        <p class="label">Portfolio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="icon fa-solid fa-paper-plane"></i>
+                        <p class="label">Contact</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-icon">
+                <li>
+                    <a href="https://www.linkedin.com/in/ziqianwang2021/">
+                        <i class="foot-icon fa-brands fa-linkedin"></i>
+                        <p class="foot-label">Linkedin</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ZiqianWPort">
+                        <i class="foot-icon fa-brands fa-github"></i>
+                        <p class="foot-label">Github</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.16.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.16.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.16.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm Ziqian,</h1>
+                <!-- <h1 id="web">Web</h1> -->
+                <h1><span class="multitext"></span></h1>
+                <div class="btns">
+                    <button>Have me in your team</button>
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+        var typingEffect = new Typed('.multitext', {
+            strings: ['Web Developer', 'UI/UX Designer', 'Illustratior'],
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+            loop: true
+        });
     </script>
-  </body>
+</body>
+
 </html>
