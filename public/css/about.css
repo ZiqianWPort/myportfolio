@@ -36,12 +36,12 @@ body{
 .container{
     width:100%;
     min-height:100vh;
-    background-image: url("../items/bg.png");
+    /* background-image: url("../items/bg.png");
     background-size:auto 100vh;
     background-repeat: no-repeat;
-    background-position:right;
+    background-position:right; */
     display:flex;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
 }
 
@@ -180,123 +180,3 @@ li:hover i{
     white-space:nowrap;
     transition: all .2s ease-out;
 }
-
-/* ================ introduction ==================== */
-
-.wrapper{
-    display:flex;
-    width: 100%;
-    height: calc(100vh - 80px);
-    justify-content: center;
-    align-items: top;
-    /* margin-top: 10%; */
-    padding: 0 10%;
-    overflow:hidden;
-    font-family: 'Poppins', sans-serif;
-}
-
-.cols{
-    width: 100%;
-}
-
-.cols0{
-    z-index: 5;
-}
-
-.topline{
-    display:block;
-    position:relative;
-    font-size:35px;
-    letter-spacing: 5px;
-    color:#3d555f;
-}
-
-.topline::after{
-    position:absolute;
-    content:'';
-    height:4px;
-    width:45px;
-    bottom:10px;
-    background-color: #44836B;
-    animation: flash 1s linear infinite;
-}
-
-.container h1{
-    display: block;
-    font-size: 6em;
-    font-weight: 800;
-    color:#3d535f;
-}
-.multitext{
-    color:#f3f5f8;
-    text-transform: capitalize;
-}
-
-.banner{
-    margin-top: 10%;
-}
-
-.btns{
-    width: 100%;
-    position:relative;
-    margin-top:6%;
-}
-
-.banner-btn{
-    /* outline:none;
-    border:none; */
-    cursor:pointer;
-    font-size:25px;
-    font-weight:400;
-    color:#fff;
-    background-color:#3d535f;
-    border-radius: 30px;
-    padding:8px 14px;
-    margin: 40px 5px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    box-shadow: 0 15px 10px rgba(0,0,0,0.3)
-}
-
-
-.banner-btn{
-    color:#fff;
-    text-decoration: none;
-}
-
-.banner-btn:hover{
-    /* background-color:#44836B; */
-    opacity: 80%;
-}
-
-
-
-/* ================ animation ==================== */
-
-@keyframes jitter {
-    0% {
-        transform: scale(1.2) rotate(10deg);
-    }
-    50% {
-        transform: scale(0.8) rotate(-10deg);
-    }
-    0% {
-        transform: scale(1.0) rotate(0deg);
-    }
-}
-
-@keyframes flash {
-    0% {
-        opacity:1;
-    }
-    70% {
-        opacity:1;
-    }
-    71% {
-        opacity:0;
-    }
-    100% {
-        opacity:0;
-    }
-  }
-

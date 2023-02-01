@@ -12,11 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=Chela+One&family=Dela+Gothic+One&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Fredericka+the+Great&family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Nabla&family=Oi&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rampart+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!---->
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <title>ZW Folio.</title>
 </head>
 <body>
+    
     <div class="container">
+
+        <!-- ========== NAV BAR ========== -->
     
         <nav class="nav-bar">
             <div class="expand-icon">
@@ -24,31 +27,31 @@
                 <i id="in" class="uil uil-angle-double-left"></i>
             </div>
             <ul class="top-icon">
-                <li>
+                <li class="nav-btn">
                     <a href="index.html">
                         <i class="icon fa-solid fa-house"></i>
                         <p class="label">Home</p>
                 </a>
                 </li>
-                <li>
+                <li class="nav-btn">
                     <a href="about.html">
                         <i class="icon fa-solid fa-user"></i>
                         <p class="label">About</p>
                 </a>
                 </li>
-                <li>
+                <li class="nav-btn">
                     <a href="skills.html">
                         <i class="icon fa-solid fa-file-lines"></i>
                         <p class="label">Skills</p>
                 </a>
                 </li>
-                <li>
+                <li class="nav-btn">
                     <a href="portfolio.html">
                         <i class="icon fa-solid fa-folder-open"></i>
                         <p class="label">Portfolio</p>
                     </a>
                 </li>
-                <li>
+                <li class="nav-btn">
                     <a href="contact.html">
                         <i class="icon fa-solid fa-paper-plane"></i>
                         <p class="label">Contact</p>
@@ -56,13 +59,13 @@
                 </li>
             </ul>
             <ul class="social-icon">
-                <li>
+                <li class="nav-btn">
                     <a href="https://www.linkedin.com/in/ziqianwang2021/">
                         <i class="foot-icon fa-brands fa-linkedin"></i>
                         <p class="foot-label">Linkedin</p>
                     </a>
                 </li>
-                <li>
+                <li class="nav-btn">
                     <a href="https://github.com/ZiqianWPort">
                         <i class="foot-icon fa-brands fa-github"></i>
                         <p class="foot-label">Github</p>
@@ -71,33 +74,64 @@
             </ul>
         </nav>
 
-        <!-- ========== BANNER ========== -->
+        <!-- ========== PORTFOLIO ========== -->
 
-        <div class="wrapper">
-            <div class="cols cols0">
-                <div class="banner">
-                    <span class="topline">Hello</span>
-                    <h1>I'm Ziqian,</h1>
-                    <!-- <h1 id="web">Web</h1> -->
-                    <h1><span class="multitext"></span></h1>
-                </div>
-                <div class="btns">
-                    <a class="banner-btn">Have me in your team</a>
-                    <a class="banner-btn" href="../public/items/Jeffrey (Ziqian) Wang Resume.pdf" download>Download CV</a>
-                </div>
-            </div>
+        <div class="portfolio">
+            <ul class="work-list">
+                <!-- row 1 -->
+                <li class="story">
+                    <a href="index.html">
+                        <h2 class="story-title">Work</h2>
+                        <span class="date">12/12/2022</span>
+                    </a>
+                </li>
+                <li class="story">
+                    <a href="index.html">
+                        <h2 class="story-title">Work</h2>
+                        <span class="date">12/12/2022</span>
+                    </a>
+                </li>
+                <li class="story">
+                    <a href="index.html">
+                        <h2 class="story-title">Work</h2>
+                        <span class="date">12/12/2022</span>
+                    </a>
+                </li>
+                <!-- row 2 -->
+                <li class="story">
+                    <a href="index.html">
+                        <h2 class="story-title">Work</h2>
+                        <span class="date">12/12/2022</span>
+                    </a>
+                </li>
+                <li class="story">
+                    <a href="index.html">
+                        <h2 class="story-title">Work</h2>
+                        <span class="date">12/12/2022</span>
+                    </a>
+                </li>
+                <li class="story">
+                    <a href="index.html">
+                        <h2 class="story-title">Work</h2>
+                        <span class="date">12/12/2022</span>
+                    </a>
+                </li>
+            </ul>
         </div>
+    
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- create a placeholder for the last row of 
+      layout when there's odd number of stories -->
     <script>
-        var bannerTyping = new Typed('.multitext', {
-            strings: ['Developer', 'Designer', 'Artist'],
-            typeSpeed: 100,
-            backSpeed: 80,
-            backDelay: 1500,
-            loop: true
-        });
+        var ul = document.querySelector('.work-list');
+        var lis = ul.querySelectorAll('li');
+  
+        if (lis.length % 2 !== 0) {
+          var li = document.createElement('li');
+          li.classList.add('placeholder');
+          ul.appendChild(li);
+        }
     </script>
 </body>
 
