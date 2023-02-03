@@ -30,15 +30,22 @@ font-family: 'Source Code Pro', monospace;
 
 body{
     overflow:scroll;
-    background: linear-gradient(135deg,#24ff72,#2196f3);
+    background-image: white;
+    background-size:auto 100%;
+    background-position:right;
 }
 
 .container{
     width:100%;
     min-height:100vh;
+    background-image: url("../items/bg-small-90.png");
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-position:top;
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    overflow: scroll;
 }
 
 /* ================ NAV BAR ==================== */
@@ -90,7 +97,7 @@ body{
 
 #out,
 #in{
-    color:#44836B;
+    color:#3d555f;
     font-size: 32px !important;
     animation: jitter 0.3s linear forwards;
 }
@@ -150,7 +157,7 @@ body{
 
 .foot-icon{
     font-size:26px !important;
-    color:#44836B;
+    color:#3d535f;
     line-height: 50px;
     text-align:center;
 }
@@ -179,7 +186,6 @@ body{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    overflow: scroll;
     /* background-color: #2196f3; */
 }
 
@@ -194,7 +200,7 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     padding: 36px;
     background: linear-gradient(white, white 50%, #333 50%, #333);
-    opacity: 0.8;
+    opacity: 0.95;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.2s ease;
@@ -202,13 +208,18 @@ body{
 }
 
 .work-list{
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
+    justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
     width: 100%;
     gap: 40px 40px;
+    overflow: scroll;
   }
+.work-list::-webkit-scrollbar {
+    display: none;
+}
 
 .work-list .story{
     height: auto;
@@ -220,22 +231,34 @@ body{
     background-position: 100% 100%;
 }
 
+.story:hover .story-title,
+.story:hover .date{
+    color: #f3f5f8;
+}
+
 .placeholder{
     list-style: none;
     margin-bottom: 1%;
     padding: 36px;
 }
 
-
-
 a{
     text-decoration: none;
+    color:#3d555f;
 }
 
-/* responsive layout */
+/* ================ RESPONSIVE LAYOUT ==================== */
 
-/* small */
-@media (min-width: 720px){
+@media (max-width: 1255px) {
+    .container{
+        height:100%;
+        width:auto;
+        background-size:auto 100%;
+        background-position: right;
+    }
+}
+
+@media (max-width: 720px){
 
     li{
         border: none;
@@ -255,15 +278,14 @@ a{
     }
 }
 
-/* big */
-@media (min-width: 1024px){
+@media (max-width: 1200px){
 
     .story{
         flex: 1 1 300px;
     }
 }
 
-/* animation */
+/* ================ ANIMATION ==================== */
 
 @keyframes up-bump {
     0% { padding-top: 2em; }

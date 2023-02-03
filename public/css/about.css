@@ -30,22 +30,25 @@ font-family: 'Source Code Pro', monospace;
 
 body{
     overflow:scroll;
-    background: linear-gradient(135deg,#24ff72,#2196f3);
+    background-image: white;
+    background-size:auto 100%;
+    background-position:right;
 }
 
 .container{
     width:100%;
     min-height:100vh;
-    /* background-image: url("../items/bg.png");
-    background-size:auto 100vh;
+    background-image: url("../items/bg-small-90.png");
+    background-size:100% auto;
     background-repeat: no-repeat;
-    background-position:right; */
+    background-position:top;
     display:flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
+    overflow: scroll;
 }
 
-/* ================ navigation bar ==================== */
+/* ================ NAV BAR ==================== */
 
 .foot-label,
 .label{
@@ -162,7 +165,7 @@ li:hover i{
 
 .foot-icon{
     font-size:26px !important;
-    color:#44836B;
+    color:#3d535f;
     line-height: 50px;
     text-align:center;
 }
@@ -179,4 +182,15 @@ li:hover i{
     color:#44836B;
     white-space:nowrap;
     transition: all .2s ease-out;
+}
+
+/* ================ RESPONSIVE LAYOUT ==================== */
+
+@media (max-width: 1255px) {
+    .container{
+        height:100%;
+        width:auto;
+        background-size:auto 100%;
+        background-position: right;
+    }
 }
