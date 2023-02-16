@@ -16,6 +16,11 @@
     <title>ZW Folio.</title>
 </head>
 <body>
+
+    <div id="loader-container">
+        <div id="loader"></div>
+    </div>      
+
     <div class="container">
     
         <nav class="nav-bar">
@@ -32,7 +37,7 @@
                 </li>
                 <li>
                     <a href="about.html">
-                        <i class="icon fa-solid fa-user"></i>
+                        <i class="icon fa-solid fa-file-lines"></i>
                         <p class="label">About</p>
                 </a>
                 </li>
@@ -83,7 +88,7 @@
                 </div>
                 <div class="btns">
                     <a class="banner-btn">Have me in your team</a>
-                    <a class="banner-btn" href="../public/items/Jeffrey (Ziqian) Wang Resume.pdf" download>Download CV</a>
+                    <a class="banner-btn" href="../public/items/Jeffrey(Ziqian) Wang Resume.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
@@ -98,6 +103,11 @@
             backDelay: 1500,
             loop: true
         });
+
+        window.addEventListener("load", function() {
+            document.getElementById("loader-container").style.display = "none";
+        });
+
     </script>
 </body>
 
