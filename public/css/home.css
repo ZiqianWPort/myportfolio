@@ -1,0 +1,342 @@
+@import url(./global.css);
+
+/*========== NAVBAR ==========*/
+
+.nav-bar {
+    position: fixed;
+    width: 60px;
+    height: 90vh;
+    margin-left: 30px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+    z-index:100;
+    transition: all 0.5s ease-out;
+}
+.nav-bar:hover {
+    width: 150px;
+    border-radius: 60px;
+}
+
+.nav-bar:hover>ul>li .foot-label,
+.nav-bar:hover>ul>li .label {
+    display: block;
+}
+
+/* icon & label sizing */
+.foot-label,
+.label {
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+}
+
+.icon {
+    font-size: 26px;
+    color: var(--dark-green);
+    line-height: 50px;
+    text-align: center;
+}
+
+/* in & out icon */
+.expand-icon {
+    width: 100%;
+    text-align: center;
+    margin: 25px auto 10px auto;
+}
+
+#out,
+#in {
+    color: var(--light-green);
+    font-size: 26px;
+    animation: jitter 0.3s linear forwards;
+}
+
+#in {
+    display: none;
+}
+
+.nav-bar:hover #out {
+    display: none;
+}
+
+.nav-bar:hover #in {
+    display: block;
+}
+
+.nav-bar:hover .wrapper {
+    margin-left: 15vh;
+}
+
+/* nav main icons */
+ul {
+    width: 100%;
+    height: 70%;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    text-decoration: none;
+}
+
+li:hover {
+    color: var(--light-green);
+    cursor: pointer;
+}
+
+li:hover .label,
+li:hover .foot-label,
+li:hover i {
+    color: var(--light-green);
+}
+
+li:hover i {
+    animation: jitter .3s linear forwards;
+}
+
+.label {
+    display: none;
+    padding-left: 5px;
+    color: var(--dark-green);
+    white-space: nowrap;
+    transition: all .2s ease-out;
+}
+
+/* social icons */
+.foot-icon {
+    font-size: 26px !important;
+    color: var(--dark-green);
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-icon {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.foot-label {
+    display: none;
+    padding-left: 5px;
+    color: var(--dark-green);
+    white-space: nowrap;
+    transition: all .2s ease-out;
+}
+
+/* ================ MAIN ================ */
+
+#home {
+    height: 100vh;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-out;
+}
+.nav-bar:hover + #home {
+    margin-left: 165px;
+    transition: all 0.5s ease-out;
+}
+
+#background-img{
+    top:0;
+    left:0;
+    margin: auto 30px auto 50px;
+    width: 60vw;
+    height:90vh;
+    border-radius: 30px;
+    background-image: url(../assets/bg-small-halftone.png);
+    background-size: cover;
+    background-position: right; 
+    background-repeat: no-repeat;
+}
+
+.nav-bar:hover #background-img{
+    width:100vh;
+}
+
+/* ================ INTRODUCTION ================ */
+
+.wrapper-placeholder{
+    width: 40vw;
+    height: 90vh;
+    display: flex;
+    margin: auto 40px auto 40px;
+}
+
+.wrapper {
+    position: absolute;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto 40px auto 40px;
+    font-family: 'Fascinate', cursive;
+    /* background-color: #44836B; */
+}
+.wrapper h1{
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--banner-color);
+}
+
+.banner {
+    width:auto;
+    height:30%;
+    margin-top: 8%;
+}
+
+.hello {
+    width:100%;
+    display: block;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 5px;
+    background: -webkit-linear-gradient(135deg, #F54C3B, var(--banner-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.37); */
+}
+.hello::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 30px;
+    bottom: 10px;
+    background-color: var(--banner-color);
+    animation: flash 1s linear infinite;
+}
+
+.Im h1,
+.multitext{
+    font-size: 55px;
+}
+
+.Im h1 {
+    background: -webkit-linear-gradient(135deg, #ff3434, var(--banner-color), #ffbe54);
+    /* background: -webkit-linear-gradient(135deg, #fe72b8, var(--banner-color), #eec9d5); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.1); */
+}
+
+.multitext {
+    background: -webkit-linear-gradient(315deg, #ff3434, var(--banner-color), #ffbe54);
+    /* background: -webkit-linear-gradient(135deg, #fe72b8, var(--banner-color), #eec9d5); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    font-family: 'Oi', cursive;
+    /* font-family: 'Fascinate', cursive; */
+}
+
+.btns {
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    margin-top: 6%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner-btn {
+    /* outline:none;
+    border:none; */
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    background-color: #3d535f;
+    border-radius: 30px;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner-btn:hover {
+    /* background-color:#44836B; */
+    opacity: 80%;
+}
+
+/* ================ ABOUT ================ */
+
+.about{
+    margin-top: 2%;
+    width: 36vw;
+    max-height:63%;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size:1.1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--black-color);
+}
+
+.about .highlight {
+    color: var(--banner-color);
+    text-transform: capitalize;
+}
+
+/* ================ SKILL ================ */
+
+#skill{
+    width: calc(100% - 60px);
+    height:100vh;
+    margin:auto;
+}
+
+/* ========== ANIMATION ========== */
+
+@keyframes jitter {
+    0% {
+        transform: scale(1.2) rotate(10deg);
+    }
+
+    50% {
+        transform: scale(0.8) rotate(-10deg);
+    }
+
+    0% {
+        transform: scale(1.0) rotate(0deg);
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    71% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
