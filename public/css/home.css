@@ -295,7 +295,6 @@ li:hover i {
     margin-top: 1%;
     color: var(--banner-color);
     text-transform: capitalize;
-    text-decoration: none;
 }
 
 .banner-btn a{
@@ -304,6 +303,7 @@ li:hover i {
 
 .banner-btn:hover {
     color: var(--white-color);
+    text-decoration: none;
     background: -webkit-linear-gradient(135deg, var(--banner-color), #ffbe54);
 }
 
