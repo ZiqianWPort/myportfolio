@@ -255,6 +255,7 @@ li:hover i {
 /* ================ ABOUT ================ */
 
 .about{
+    margin-top:-10%;
     width: 36vw;
     min-width:420px;
     max-height:63%;
@@ -280,7 +281,7 @@ li:hover i {
     width: 100%;
     height: 20vh;
     position: relative;
-    margin-top: 15%;
+    margin-top: 12%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
