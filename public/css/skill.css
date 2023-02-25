@@ -1,0 +1,27 @@
+@import url(./home.css);
+@import url(./global.css);
+
+/* ================ SKILL ================ */
+
+#skill{
+    margin-left: 120px;
+    transition: all 0.5s ease-out;
+}
+
+.skill-block{
+    max-width: calc(100% - 40px);
+    height:90vh;
+    margin-left: 0px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-out;
+}
+
+.nav-bar:hover ~ #skill {
+    margin-left: 210px;
+}

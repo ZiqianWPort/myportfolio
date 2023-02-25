@@ -55,14 +55,14 @@ font-family: 'Vast Shadow', cursive;
 */
 
 :root {
-    --beige-color: #f5f5f5;
+    --white-color: #f5f5f5;
     --black-color: #1c1b1b;
     --dark-green: #3d535f;
     --light-green: #44836B;
     --body-green: #436956;
-    /* --banner-color: #bb95a9; */
-    /* --banner-color: #FA7B4D; */
+    --red-color:#ff3434;
     --banner-color: #FA8134;
+    --yellow-color:#ffbe54;
     /* --banner-color:#db95b8; */
 }
 
@@ -91,4 +91,51 @@ body{
 body::-webkit-scrollbar {
     /* hide the scrollbar on Chrome, Safari, and Opera */
     display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(315deg, var(--red-color), var(--banner-color));
+    color: var(--white-color);
+    font-size: 18px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:5px;
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1s;
+    overflow: hidden;
+}
+
+#scroll-to-top-btn:hover {
+    background: -webkit-linear-gradient(315deg, var(--banner-color), var(--yellow-color));
+    color: var(--black-color);
+    transition: all 0.1s ease;
+    animation-play-state: paused;
+}
+
+/*==================== ANIMATION ====================*/
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
