@@ -28,6 +28,11 @@
     display: block;
 }
 
+.nav-bar a{
+    text-decoration: dashed;
+    color: var(--light-green);
+}
+
 /* icon & label sizing */
 .foot-label,
 .label {
@@ -66,6 +71,9 @@
 }
 .nav-bar:hover #in {
     display: block;
+}
+.nav-bar:hover a{
+    text-decoration: none;
 }
 .nav-bar:hover .wrapper {
     margin-left: 15vh;
