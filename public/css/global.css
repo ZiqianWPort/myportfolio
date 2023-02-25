@@ -111,6 +111,7 @@ body::-webkit-scrollbar {
     animation: float 3s ease-in-out infinite;
     animation-delay: 1s;
     overflow: hidden;
+    text-decoration: none;
 }
 
 #scroll-to-top-btn:hover {
