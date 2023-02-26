@@ -3,25 +3,98 @@
 
 /* ================ SKILL ================ */
 
-#skill{
-    margin-left: 120px;
+#skill {
+    margin-top: 2%;
+    margin-left: 50px;
     transition: all 0.5s ease-out;
 }
 
-.skill-block{
+#skill-block {
     max-width: calc(100% - 40px);
-    height:90vh;
-    margin-left: 0px;
+    height: 90vh;
+    margin-left: 0;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    border-radius: 30px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease-out;
+    /* background-color: var(--white-color);
+    background: radial-gradient(circle at 50% 50%, var(--body-green) 50%,transparent 50%); */
+    background-color: white;
+    background-size: 4px 4px;
+    /* background-image: linear-gradient(300deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    --border-radius: 90px;
+    border-radius: var(--border-radius);
+    opacity: 1;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: round 5s linear infinite; */
 }
 
-.nav-bar:hover ~ #skill {
-    margin-left: 210px;
+#skill-block::-webkit-scrollbar {
+    display: none;
+}
+
+.skill-content {
+    width: 92%;
+    height: 90%;
+    display: flex;
+    border: 5px solid var(--body-green) 0.8;
+    --border-radius: 60px;
+    border-radius: var(--border-radius);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* animation: round 5s linear infinite; */
+}
+
+.designer,
+.developer{
+    height: 96%;
+    background-color: whitesmoke;
+    --border-radius: 60px;
+    border-radius: var(--border-radius);
+}
+
+.designer {
+    width:30%;
+    margin-left:1%;
+    transition: all 0.5s ease-out;
+}
+.developer{
+    width:65%;
+    margin-right:1%;
+    transition: all 0.5s ease-out;
+}
+.designer:hover {
+    width:65%;
+}
+.developer:hover{
+    width:65%;
+}
+.designer:hover + .developer {
+    width: 30%;
+}
+
+/* ========== ANIMATION ========== */
+
+@keyframes round {
+    0% {
+        border-radius: calc(var(--border-radius))
+    }
+
+    5% {
+        border-radius: calc(var(--border-radius))
+    }
+
+    50% {
+        border-radius: calc(var(--border-radius) * (4/3))
+    }
+
+    100% {
+        border-radius: calc(var(--border-radius))
+    }
 }

@@ -39,13 +39,13 @@
                 </li>
                 <li>
                     <a href="#skill">
-                        <i class="icon fa-solid fa-file-lines"></i>
-                        <p class="label">Skills</p>
+                        <i class="icon fa-solid fa-screwdriver-wrench"></i>
+                        <p class="label">Skill Set</p>
                     </a>
                 </li>
                 <li>
                     <a href="portfolio.html">
-                        <i class="icon fa-solid fa-folder-open"></i>
+                        <i class="icon fa-solid fa-box-archive"></i>
                         <p class="label">Portfolio</p>
                     </a>
                 </li>
@@ -72,39 +72,47 @@
             </ul>
         </nav>
 
-        <main id="home">
-            <div class="wrapper">
-                <div class="banner">
-                    <span class="hello">Hello</span>
-                    <span class="Im">
-                        <h1>I'm Ziqian,</h1>
-                    </span>
-                    <h1><span class="multitext"></span></h1>
-                </div>
-
-                <div class="about">
-                    <p class="about-text">
-                        I'm a <span class="highlight">front-end web developer</span> and <span class="highlight">UI/UX
-                            designer</span> based in
-                        <span class="highlight">St.Louis, USA.</span> I'm currently studying at <span
-                            class="highlight">Washington University in St.Louis,</span> and
-                        working as a freelance <span class="highlight">web developer & designer.</span>
+        <main>
+            <div id="home">
+                <div class="wrapper">
+                    <div class="banner">
+                        <span class="hello">Hello</span>
+                        <span class="Im">
+                            <h1>I'm Ziqian,</h1>
                         </span>
-                    </p>
+                        <h1><span class="multitext"></span></h1>
+                    </div>
 
-                    <div class="btns">
-                        <a class="banner-btn" href="#"> >> have me on your team</a>
-                        <a class="banner-btn" href="./assets/Jeffrey(Ziqian) Wang Resume.pdf" download> >> Download CV</a>
+                    <div class="about">
+
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+                        <div class="about-text">
+                            <p>I'm a freelance <span class="highlight">front-end web developer</span> and a general
+                                doodler with a keen eye for creating engaging <span class="highlight">UI/UX
+                                    design,</span> bringing ideas to live.</p>
+                        </div>
+
+                        <div class="btns">
+                            <a class="banner-btn" href="#"> >> have me on your team</a>
+                            <a class="banner-btn" href="./assets/Jeffrey(Ziqian) Wang Resume.pdf" download> >> Download
+                                my resume</a>
+                        </div>
                     </div>
                 </div>
+                <div class="wrapper-placeholder"></div>
+                <div id="background-img"></div>
             </div>
-            <div class="wrapper-placeholder"></div>
-            <div id="background-img"></div>
-        </main>
 
-        <main id="skill">
-            <div class="skill-block">
-                
+            <div id="skill-halftone"></div>
+            <div id="skill">
+                <div id="skill-block">
+                    <div class="skill-content">
+                        <div class="designer"></div>
+                        <div class="developer"></div>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -115,6 +123,7 @@
 
     <!-- ========== JAVASCRIPT ========== -->
     <script>
+        //banner typing effect
         var bannerTyping = new Typed('.multitext', {
             strings: ['Developer', 'Designer', 'Artist'],
             typeSpeed: 100,
@@ -123,6 +132,39 @@
             loop: true,
             showCursor: false
         });
+
+
+        // Get the element to perform horizontal scrolling
+        // const skillBlock = document.getElementById("skill-block");
+
+        // Listen for the wheel event on the element
+        skillBlock.addEventListener("wheel", function (event) {
+            // Get the current scroll position of the element
+            const scrollPosition = skillBlock.scrollLeft;
+
+            // Calculate the amount to scroll horizontally based on the vertical or horizontal scrolling delta
+            const horizontalScrollAmount = event.deltaY;
+            const verticalScrollAmount = event.deltaX;
+
+            // Check if the user is scrolling at the start of the content and keeps scrolling up/left
+            if (scrollPosition === 0 && horizontalScrollAmount < 0 && verticalScrollAmount < 0) {
+                // Allow the default scrolling behavior for the entire webpage in the up/left direction
+                return;
+            }
+            // Check if the user is scrolling at the end of the content and keeps scrolling down/right
+            else if (scrollPosition === skillBlock.scrollWidth - skillBlock.clientWidth && horizontalScrollAmount > 0 && verticalScrollAmount > 0) {
+                // Allow the default scrolling behavior for the entire webpage in the down/right direction
+                return;
+            }
+            // Otherwise, prevent the default scrolling behavior and scroll the element horizontally
+            event.preventDefault();
+            skillBlock.scrollTo({
+                left: scrollPosition + horizontalScrollAmount + verticalScrollAmount,
+                behavior: "smooth"
+            });
+        });
+
+
     </script>
 </body>
 

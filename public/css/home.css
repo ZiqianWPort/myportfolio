@@ -60,7 +60,7 @@
 #out,
 #in {
     color: var(--light-green);
-    font-size: 26px;
+    font-size: 20px;
     animation: jitter 0.3s linear forwards;
 }
 #in {
@@ -151,13 +151,16 @@ li:hover i {
 
 #home {
     height: 100vh;
-    margin-left: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all 0.5s ease-out;
 }
-.nav-bar:hover + #home {
+main{
+    margin-left: 80px;
+    transition: all 0.5s ease-out;
+}
+.nav-bar:hover + main {
     margin-left: 165px;
     transition: all 0.5s ease-out;
 }
@@ -197,7 +200,7 @@ li:hover i {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: auto 40px auto 40px;
+    margin: auto 30px auto 50px;
     font-family: 'Fascinate', cursive;
     /* background-color: #44836B; */
 }
@@ -281,6 +284,11 @@ li:hover i {
 .about .highlight {
     color: var(--banner-color);
     text-transform: capitalize;
+}
+
+.about-text #sum{
+    font-style:normal;
+    margin-top:10px;
 }
 
 /* ================ HIRE ME ================ */
