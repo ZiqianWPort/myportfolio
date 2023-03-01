@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/skill.css">
 </head>
 
@@ -26,36 +27,39 @@
         </a>
 
         <nav class="nav-bar">
+
             <a href="#home" class="expand-icon">
                 <i id="out" class="fa-solid fa-crow"></i>
                 <i id="in" class="fa-solid fa-dove"></i>
             </a>
+
             <ul class="top-icon">
                 <li>
                     <a href="#home">
-                        <i class="icon fa-solid fa-house"></i>
+                        <i class="icon fa-solid fa-campground"></i>
                         <p class="label">Home</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#skill">
-                        <i class="icon fa-solid fa-screwdriver-wrench"></i>
-                        <p class="label">Skill Set</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="portfolio.html">
-                        <i class="icon fa-solid fa-box-archive"></i>
+                    <a href="#portfolio">
+                        <i class="icon fa-solid fa-compact-disc"></i>
                         <p class="label">Portfolio</p>
                     </a>
                 </li>
                 <li>
+                    <a href="#about">
+                        <i class="icon fa-solid fa-motorcycle"></i>
+                        <p class="label">About Me</p>
+                    </a>
+                </li>
+                <li>
                     <a href="contact.html">
-                        <i class="icon fa-solid fa-paper-plane"></i>
+                        <i class="icon fa-solid fa-mug-saucer"></i>
                         <p class="label">Contact</p>
                     </a>
                 </li>
             </ul>
+
             <ul class="social-icon">
                 <li>
                     <a href="https://www.linkedin.com/in/ziqianwang2021/">
@@ -89,15 +93,15 @@
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
                         <div class="about-text">
-                            <p>I'm a freelance <span class="highlight">front-end web developer</span> and a general
-                                doodler with a keen eye for creating engaging <span class="highlight">UI/UX
+                            <p>I'm a freelance <span class="highlight">front-end web developer</span> and a
+                                designer with a keen eye for creating engaging <span class="highlight">UI/UX
                                     design,</span> bringing ideas to live.</p>
                         </div>
 
                         <div class="btns">
-                            <a class="banner-btn" href="#"> >> have me on your team</a>
-                            <a class="banner-btn" href="./assets/Jeffrey(Ziqian) Wang Resume.pdf" download> >> Download
+                            <a class="banner-btn" href="./assets/Jeffrey(Ziqian) Wang Resume.pdf"> >> View
                                 my resume</a>
+                            <a class="banner-btn" href="#"> >> have me on your team</a>
                         </div>
                     </div>
                 </div>
@@ -105,15 +109,153 @@
                 <div id="background-img"></div>
             </div>
 
-            <div id="skill-halftone"></div>
-            <div id="skill">
+            <div id="portfolio">
+
+                <span class="portfolio-title">
+                    <h1>Portfolio</h1>
+                </span>
+                <span class="portfolio-subtitle">
+                    <h2>/* Have a look around at my selected projects from recent years! */</h2>
+                </span>
+
+                <div id="portfolio-content">
+
+                    <a class="work">
+                        <div class="hover-detect" id="port-hover"></div>
+                        <div class="work-block">
+                            <div class="work-content">
+                                <div class="card" id="this-portfolio">
+                                    <div class="front-content">
+                                        <i id="port-icon" class="fa-solid fa-crow"></i>
+                                        <h1>ZW Folio.</h1>
+                                    </div>
+                                    <div class="back-content">
+                                        <i id="port-icon-back" class="fa-solid fa-crow"></i>
+                                        <h1>ZW Folio.</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a class="work">
+                        <div class="hover-detect" id="bubble-hover"></div>
+                        <div class="work-block">
+                            <div class="work-content">
+                                <div class="card" id="bubble-talk">
+                                    <div class="front-content">
+                                        <i class="fa-solid fa-vr-cardboard"></i>
+                                        <h1>Bubble Talk</h1>
+                                    </div>
+                                    <div class="back-content">
+                                        <i class="fa-solid fa-vr-cardboard"></i>
+                                        <h1>Bubble Talk</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- https://zwfolio.com/works/bubble_talk/index.html -->
+
+                    <a class="work">
+                        <div class="hover-detect" id="ursa-hover"></div>
+                        <div class="work-block">
+                            <div class="work-content">
+                                <div class="card" id="ursaworks">
+                                    <div class="front-content">
+                                        <img src="./assets/ursaworks_logo_star.png" alt="">
+                                    </div>
+                                    <div class="back-content">
+                                        <img src="./assets/ursaworks_logo_star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="work">
+                        <div class="hover-detect" id="mirror-hover"></div>
+                        <div class="work-block">
+                            <div class="work-content">
+                                <div class="card" id="mirror">
+                                    <div class="front-content">
+                                        <img src="./assets/mirror-icon.png" alt="">
+                                        <h1>MIRROR</h1>
+                                    </div>
+                                    <div class="back-content">
+                                        <img src="./assets/mirror-white.png" alt="">
+                                        <h1>MIRROR</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="work">
+                        <div class="hover-detect" id="mem-hover"></div>
+                        <div class="work-block">
+                            <div class="work-content">
+                                <div class="card" id="memorylane">
+                                    <div class="front-content">
+                                        <i class="fa-solid fa-brain"></i>
+                                        <h1>MemoryLane</h1>
+                                    </div>
+                                    <div class="back-content">
+                                        <i class="fa-solid fa-brain"></i>
+                                        <h1>MemoryLane</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="work">
+                        <div class="hover-detect" id="kin-hover"></div>
+                        <div class="work-block">
+                            <div class="work-content">
+                                <div class="card" id="kinexus">
+                                    <div class="front-content">
+                                        <img src="./assets/kinexus_icon.png" alt="">
+                                        <h1>KINEXUS</h1>
+                                    </div>
+                                    <div class="back-content">
+                                        <img src="./assets/kinexus_icon.png" alt="">
+                                        <h1>KINEXUS</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div id="about">
                 <div id="skill-block">
                     <div class="skill-content">
-                        <div class="designer"></div>
-                        <div class="developer"></div>
+
+                        <div class="designer">
+                            <div class="design-title">
+                                <h1>DESIGN</h1>
+                            </div>
+                            <div class="design-text">
+
+                            </div>
+                        </div>
+                        <div class="developer">
+                            <div class="dev-title">
+                                <h1>DEVELOPMENT</h1>
+                            </div>
+                            <div class="dev-text">
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </main>
 
         <footer>
@@ -123,6 +265,7 @@
 
     <!-- ========== JAVASCRIPT ========== -->
     <script>
+
         //banner typing effect
         var bannerTyping = new Typed('.multitext', {
             strings: ['Developer', 'Designer', 'Artist'],
@@ -133,6 +276,169 @@
             showCursor: false
         });
 
+        //pause hover effect
+        const hoverDetect = document.querySelector('.hover-detect');
+        let hoverEnabled = true;
+        let hoverPaused = false;
+
+        const handleMouseEnter = () => {
+            hoverEnabled = true;
+            hoverPaused = false;
+        };
+        const handleMouseLeave = () => {
+            hoverEnabled = false;
+            if (!hoverDetect.matches(':hover')) {
+                hoverPaused = true;
+            }
+            // Add the hover effects here
+            setTimeout(() => {
+                hoverEnabled = true;
+                hoverPaused = false;
+            }, 600);
+        };
+
+        hoverDetect.addEventListener('mouseenter', handleMouseEnter);
+        hoverDetect.addEventListener('mouseleave', handleMouseLeave);
+
+        setInterval(() => {
+            if (!hoverDetect.matches(':hover')) {
+                if (!hoverPaused) {
+                    hoverEnabled = false;
+                    hoverPaused = true;
+                    setTimeout(() => {
+                        hoverEnabled = true;
+                        hoverPaused = false;
+                    }, 600);
+                }
+            } else {
+                hoverPaused = false;
+            }
+        }, 100);
+
+
+        //portfolio card flip back effect delay
+        const portfolio = document.querySelector('#this-portfolio');
+        const portfolioFrontContent = document.querySelector('#portfolio .front-content');
+        const portfolioBackContent = document.querySelector('#portfolio .back-content');
+        const portfolioChildElems = portfolio.querySelectorAll('i, h1');
+        const portHover = document.querySelector('#port-hover');
+        portHover.addEventListener('mouseleave', () => {
+            portfolio.style.backgroundColor = 'var(--body-green)';
+            portfolioBackContent.style.opacity = 1;
+            portfolioFrontContent.style.opacity = 0;
+            portfolioChildElems.forEach(elem => {
+                elem.style.color = 'white';
+            });
+            setTimeout(() => {
+                portfolio.style.backgroundColor = '';
+                portfolioBackContent.style.opacity = '';
+                portfolioFrontContent.style.opacity = '';
+                portfolioChildElems.forEach(elem => {
+                    elem.style.color = '';
+                });
+            }, 300);
+        });
+
+        //ursaworks card flip back effect delay
+        const ursaworks = document.querySelector('#ursaworks');
+        const ursaworksFrontContent = document.querySelector('#ursaworks .front-content');
+        const ursaworksBackContent = document.querySelector('#ursaworks .back-content');
+        const ursaHover = document.querySelector('#ursa-hover');
+        ursaHover.addEventListener('mouseleave', () => {
+            ursaworks.style.backgroundColor = '#131317';
+            ursaworksBackContent.style.opacity = 1;
+            ursaworksFrontContent.style.opacity = 0;
+            setTimeout(() => {
+                ursaworks.style.backgroundColor = '';
+                ursaworksBackContent.style.opacity = '';
+                ursaworksFrontContent.style.opacity = '';
+            }, 300);
+        });
+
+        //bubbletalk card flip back effect delay
+        const bubbleTalk = document.querySelector('#bubble-talk');
+        const bubbleTalkFrontContent = document.querySelector('#bubble-talk .front-content');
+        const bubbleTalkBackContent = document.querySelector('#bubble-talk .back-content');
+        const bubbleTalkBackContentElements = document.querySelectorAll('#bubble-talk .back-content i, #bubble-talk .back-content h1');
+        const bubbleHover = document.querySelector('#bubble-hover');
+        bubbleHover.addEventListener('mouseleave', () => {
+            bubbleTalk.style.backgroundColor = '#ffc82f';
+            bubbleTalkBackContent.style.opacity = 1;
+            bubbleTalkFrontContent.style.opacity = 0;
+            bubbleTalkBackContentElements.forEach(element => {
+                element.style.color = 'white';
+            });
+            setTimeout(() => {
+                bubbleTalk.style.backgroundColor = '';
+                bubbleTalkBackContent.style.opacity = '';
+                bubbleTalkFrontContent.style.opacity = '';
+                bubbleTalkBackContentElements.forEach(element => {
+                    element.style.color = '';
+                });
+            }, 300);
+        });
+
+        //mirror card flip back effect delay
+        const mirror = document.querySelector('#mirror');
+        const mirrorbackContent = document.querySelector('#mirror .back-content');
+        const mirrorfrontContent = document.querySelector('#mirror .front-content');
+        const mirrorTitle = document.querySelector('#mirror .back-content h1');
+        const mirrorHover = document.querySelector('#mirror-hover');
+        mirrorHover.addEventListener('mouseleave', () => {
+            mirror.style.backgroundColor = '#434BB5';
+            mirrorbackContent.style.opacity = 1;
+            mirrorfrontContent.style.opacity = 0;
+            mirrorTitle.style.color = 'white';
+            setTimeout(() => {
+                mirror.style.backgroundColor = '';
+                mirrorbackContent.style.opacity = '';
+                mirrorfrontContent.style.opacity = '';
+                mirrorTitle.style.color = '';
+            }, 300);
+        });
+
+        //memory card flip back effect delay
+        const memory = document.querySelector('#memorylane');
+        const memorybackContent = document.querySelector('#memorylane .back-content');
+        const memoryfrontContent = document.querySelector('#memorylane .front-content');
+        const memoryBackContentElements = document.querySelectorAll('#memorylane .back-content i, #memorylane .back-content h1');
+        const memHover = document.querySelector('#mem-hover');
+        memHover.addEventListener('mouseleave', () => {
+            memory.style.backgroundColor = '#7b62e1';
+            memorybackContent.style.opacity = 1;
+            memoryfrontContent.style.opacity = 0;
+            memoryBackContentElements.forEach(element => {
+                element.style.color = 'white';
+            });
+            setTimeout(() => {
+                memory.style.backgroundColor = '';
+                memorybackContent.style.opacity = '';
+                memoryfrontContent.style.opacity = '';
+                memoryBackContentElements.forEach(element => {
+                    element.style.color = '';
+                });
+            }, 300);
+        });
+
+        //kinexus card flip back effect delay
+        const kinexus = document.querySelector('#kinexus');
+        const kinexusbackContent = document.querySelector('#kinexus .back-content');
+        const kinexusfrontContent = document.querySelector('#kinexus .front-content');
+        const kinexusTitle = document.querySelector('#kinexus .back-content h1');
+        const kinHover = document.querySelector('#kin-hover');
+        kinHover.addEventListener('mouseleave', () => {
+            kinexus.style.backgroundColor = '#3d8c8d';
+            kinexusbackContent.style.opacity = 1;
+            kinexusfrontContent.style.opacity = 0;
+            kinexusTitle.style.color = 'white';
+
+            setTimeout(() => {
+                kinexus.style.backgroundColor = '';
+                kinexusbackContent.style.opacity = '';
+                kinexusfrontContent.style.opacity = '';
+                kinexusTitle.style.color = '';
+            }, 300);
+        });
 
         // Get the element to perform horizontal scrolling
         // const skillBlock = document.getElementById("skill-block");

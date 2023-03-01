@@ -1,10 +1,10 @@
 @import url(./home.css);
 @import url(./global.css);
+@import url(./portfolio.css);
 
 /* ================ SKILL ================ */
 
-#skill {
-    margin-top: 2%;
+#about {
     margin-left: 50px;
     transition: all 0.5s ease-out;
 }
@@ -13,7 +13,6 @@
     max-width: calc(100% - 40px);
     height: 90vh;
     margin-left: 0;
-    margin-top: 5vh;
     margin-bottom: 5vh;
     /* background-color: var(--white-color);
     background: radial-gradient(circle at 50% 50%, var(--body-green) 50%,transparent 50%); */
@@ -57,6 +56,9 @@
     background-color: whitesmoke;
     --border-radius: 60px;
     border-radius: var(--border-radius);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .designer {
@@ -77,6 +79,17 @@
 }
 .designer:hover + .developer {
     width: 30%;
+}
+
+.design-title,
+.dev-title{
+    color: var(--dark-green);
+    /* background: -webkit-linear-gradient(315deg, var(--red-color), var(--banner-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    margin: 3vh auto;
+    font-size: 12px;
+    font-family: 'Fascinate', cursive;
 }
 
 /* ========== ANIMATION ========== */
