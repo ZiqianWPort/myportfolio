@@ -116,16 +116,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-size: 101% 101%;
+    background-position: center;
     overflow: hidden;
-}
-
-.card{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .front-content {
@@ -154,12 +147,11 @@
 .hover-detect:not(:hover) + .work-block  {
     animation: card-rotate-reverse 0.6s linear backwards;
 }
-.hover-detect:hover + .work-block .card{
-    transition-delay: 0.3s;
-}
+
 .hover-detect:hover + .work-block .work-content {
     width:94%;
     height:94%;
+    transition-delay: 0.3s;
 }
 .hover-detect:hover + .work-block .front-content {
     opacity:0;
@@ -175,7 +167,57 @@
     transition-delay: 0.3s;
 }
 
-/* this portfolio */
+/* ========== WORK DETAIL ========== */
+.work-detail{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgb(19, 19, 23,0.5);
+    z-index: 100;
+    display: none;
+}
+.detail-block{
+    margin-left: 100px;
+    width: calc(100%-100px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-content{
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.detail-logo{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detail-logo i{
+    font-size: 13rem;
+}
+.detail-desc{
+    width: 45%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+}
+
+/* ========== this portfolio ========== */
 #this-portfolio {
     background: white;
 }
@@ -199,22 +241,14 @@
     color:white;
 }
 
-/* ursaworks */
-#ursaworks {
-    background-color: white;
-}
-#ursaworks .front-content,
-#ursaworks .back-content{
-    width:380px;
-}
-#ursaworks img {
-    width: 100%;
-}
-.hover-detect:hover + .work-block #ursaworks{
-    background-color: #131317;
+#port-detail .detail-logo{
+    background-image: url("../assets/bg-small-halftone.png");
+    background-size: auto 100.5%;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
-/* bubbletalk */
+/* ========== bubbletalk ========== */
 #bubble-talk {
     background: white;
 }
@@ -240,7 +274,36 @@
     color:white;
 }
 
-/* mirror */
+#bubble-detail .detail-logo{
+    background-image: url("../assets/bubbletalk_img.png");
+    background-size: auto 101%;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* ========== ursaworks ========== */
+#ursaworks {
+    background-color: white;
+}
+#ursaworks .front-content,
+#ursaworks .back-content{
+    width:380px;
+}
+#ursaworks img {
+    width: 100%;
+}
+.hover-detect:hover + .work-block #ursaworks{
+    background-color: #131317;
+}
+
+#ursa-detail .detail-logo{
+    background-color:#131317;
+}
+#ursa-detail img {
+    width:480px;
+}
+
+/* ========== mirror ========== */
 #mirror {
     background-color: white;
 }
@@ -267,7 +330,7 @@
     opacity: 0.95;
 }
 
-/* memorylane */
+/* ========== memorylane ========== */
 #memorylane {
     background: white;
 }
@@ -293,7 +356,7 @@
     color:white;
 }
 
-/* kinexus */
+/* ========== kinexus ==========*/
 #kinexus {
     background: white;
 }
