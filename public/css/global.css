@@ -119,10 +119,11 @@ body::-webkit-scrollbar {
 }
 
 #scroll-to-top-btn:hover {
-    background: -webkit-linear-gradient(315deg, var(--banner-color), var(--yellow-color));
-    color: var(--black-color);
+    border: 3px dashed var(--dark-green);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+    color:var(--black-color);    
     transition: all 0.1s ease;
-    animation-play-state: paused;
+    /* animation-play-state:paused; */
 }
 
 /*==================== ANIMATION ====================*/

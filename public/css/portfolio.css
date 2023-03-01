@@ -1,6 +1,6 @@
-@import url(./home.css);
 @import url(./global.css);
-@import url(./skill.css);
+@import url(./home.css);
+@import url(./about.css);
 
 #portfolio {
     margin-left: 50px;
@@ -105,6 +105,7 @@
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
+    overflow: hidden;
 }
 .work-content {
     width: 100%;
@@ -115,6 +116,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .card{
