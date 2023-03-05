@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bungee+Spice&family=Cairo+Play:wght@200&family=Coda+Caption:wght@800&family=Coiny&family=Dela+Gothic+One&family=Emblema+One&family=Fascinate&family=Fascinate+Inline&family=Gugi&family=Kdam+Thmor+Pro&family=Nabla&family=Notable&family=Poller+One&family=Saira+Stencil+One&family=Vast+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poly:ital@0;1&display=swap');
 
 /* 
 font-family: 'Anton', sans-serif;
@@ -59,6 +59,7 @@ font-family: 'Audiowide', cursive;
 font-family: 'Monoton', cursive;
 
 font-family: 'Montserrat', sans-serif;
+font-family: 'Poly', serif;
 */
 
 :root {

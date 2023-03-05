@@ -32,9 +32,6 @@
 #portfolio:hover{
     background-color: white;
 }
-#portfolio-content{
-    height:100%;
-}
 .work{
     height:100vh;
     background-color: #f2f2f2;
@@ -44,6 +41,10 @@
     align-items: flex-start;
     padding:10vh 12vw;
     text-decoration: none;
+    transition: padding 0.5s ease-out;
+}
+.nav-bar:hover ~ #below-content #portfolio #portfolio-content .work{
+    padding-left: calc(12vw + 90px);
 }
 .img-slider{
     width:100%;
