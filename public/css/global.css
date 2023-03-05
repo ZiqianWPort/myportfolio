@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bungee+Spice&family=Cairo+Play:wght@200&family=Coda+Caption:wght@800&family=Coiny&family=Dela+Gothic+One&family=Emblema+One&family=Fascinate&family=Fascinate+Inline&family=Gugi&family=Kdam+Thmor+Pro&family=Nabla&family=Notable&family=Poller+One&family=Saira+Stencil+One&family=Vast+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
 font-family: 'Anton', sans-serif;
@@ -56,17 +57,20 @@ font-family: 'Vast Shadow', cursive;
 
 font-family: 'Audiowide', cursive;
 font-family: 'Monoton', cursive;
+
+font-family: 'Montserrat', sans-serif;
 */
 
 :root {
     --white-color: #f5f5f5;
-    --black-color: #1c1b1b;
-    --dark-green: #3d535f;
+    --black-color: #1c1c1c;
+    --gray-color: #5b5b5b;
     --light-green: #44836B;
     --body-green: #436956;
     --red-color:#ff3434;
     --banner-color: #FA8134;
     --yellow-color:#ffbe54;
+    --smoky-white:#f2f2f2;
     /* --banner-color:#db95b8; */
 }
 
@@ -87,7 +91,7 @@ html {
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: var(--smoky-white);
     background-size:auto 100%;
     background-position:right;
 }
@@ -96,7 +100,10 @@ body::-webkit-scrollbar {
     /* hide the scrollbar on Chrome, Safari, and Opera */
     display: none;
 }
+/*==================== BELOW-CONTENT ====================*/
 
+
+/*==================== SCROLL TO TOP BTN ====================*/
 #scroll-to-top-btn {
     position: fixed;
     bottom: 20px;
@@ -104,8 +111,9 @@ body::-webkit-scrollbar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: -webkit-linear-gradient(315deg, var(--red-color), var(--banner-color));
-    color: var(--white-color);
+    background: var(--gray-color);
+    /* opacity:0.9; */
+    color:white;
     font-size: 18px;
     z-index: 100;
     display: flex;
@@ -116,14 +124,16 @@ body::-webkit-scrollbar {
     animation-delay: 1s;
     overflow: hidden;
     text-decoration: none;
+    opacity:0;
 }
 
 #scroll-to-top-btn:hover {
-    border: 3px dashed var(--dark-green);
+    border: 3px dashed var(--gray-color);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
-    color:var(--black-color);    
-    transition: all 0.1s ease;
+    color:var(--gray-color);
     /* animation-play-state:paused; */
+    /* filter:brightness(1.2); */
+    transition: all 0.1s ease;
 }
 
 /*==================== ANIMATION ====================*/

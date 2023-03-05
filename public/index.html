@@ -14,9 +14,11 @@
     <!-- customize stylesheet -->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/shrinkNav.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 
 <body>
@@ -25,6 +27,55 @@
 
         <a href="#home" id="scroll-to-top-btn" type='button'>
             <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <a class="shrink-nav" href="#home">
+            <div class="expand-icon">
+                <i id="out" class="fa-solid fa-crow"></i>
+                <i id="in" class="fa-solid fa-dove"></i>
+            </div>
+
+            <!-- <ul class="left-icon">
+                <li>
+                    <a href="#home">
+                        <i class="icon fa-solid fa-campground"></i>
+                        <p class="label">Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <i class="icon fa-solid fa-compact-disc"></i>
+                        <p class="label">Portfolio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <i class="icon fa-solid fa-motorcycle"></i>
+                        <p class="label">About</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="icon fa-solid fa-mug-saucer"></i>
+                        <p class="label">Connect</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="shrink-social-icon">
+                <li>
+                    <a href="https://www.linkedin.com/in/ziqianwang2021/">
+                        <i class="foot-icon fa-brands fa-linkedin"></i>
+                        <p class="foot-label">Linkedin</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ZiqianWPort">
+                        <i class="foot-icon fa-brands fa-github"></i>
+                        <p class="foot-label">Github</p>
+                    </a>
+                </li>
+            </ul> -->
         </a>
 
         <nav class="nav-bar">
@@ -50,11 +101,11 @@
                 <li>
                     <a href="#about">
                         <i class="icon fa-solid fa-motorcycle"></i>
-                        <p class="label">About me</p>
+                        <p class="label">About</p>
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html">
+                    <a href="#connect">
                         <i class="icon fa-solid fa-mug-saucer"></i>
                         <p class="label">Connect</p>
                     </a>
@@ -81,204 +132,164 @@
             <div id="home">
                 <div class="wrapper">
                     <div class="banner">
-                        <span class="hello">Hello</span>
-                        <span class="Im">
-                            <h1>I'm Ziqian,</h1>
-                        </span>
-                        <h1><span class="multitext"></span></h1>
+                        <div class="banner-title">
+                            <span class="hello">Hello</span>
+                            <span class="Im">
+                                <h1>I'm Ziqian,</h1>
+                            </span>
+                            <h1><span class="multitext"></span></h1>
+                        </div>
                     </div>
-
-                    <div class="about">
-
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-                        <div class="about-text">
-                            <p>I'm a freelance <span class="highlight">front-end web developer</span> and a
-                                designer with a keen eye for creating engaging <span class="highlight">UI/UX
-                                    design,</span> bringing ideas to live.</p>
+                    <div class="overview">
+                        <div class="overview-text">
+                            <p class="school">BS Comp-Sci '25
+                                <a href="https://wustl.edu" class="highlight">
+                                    @Washington University in St.louis
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </p>
                         </div>
 
                         <div class="btns">
-                            <a class="banner-btn" href="./assets/Jeffrey(Ziqian) Wang Resume.pdf"> >> View
-                                my resume</a>
-                            <a class="banner-btn" href="#"> >> have me on your team</a>
+                            <a class="banner-btn" id="resume-btn" href="./assets/Jeffrey(Ziqian) Wang Resume.pdf">
+                                view resume</a>
+                            <!-- <a class="banner-btn" id="hire-btn" href="#"> >> have me on your team</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="wrapper-placeholder"></div>
-                <div id="background-img"></div>
+                <!-- <div id="background-img"></div> -->
             </div>
-
-            <div id="portfolio">
-
-                <span class="portfolio-title">
-                    <h1>Portfolio</h1>
-                </span>
-                <span class="portfolio-subtitle">
-                    <h2>/* Have a look around at my selected projects from recent years! */</h2>
-                </span>
-
-                <div id="portfolio-content">
-
-                    <div class="work" id="port">
-                        <div class="hover-detect" id="port-hover"></div>
-                        <div class="work-block">
-                            <div class="work-content" id="this-portfolio">
-                                <div class="front-content">
-                                    <i id="port-icon" class="fa-solid fa-crow"></i>
-                                    <h1>ZW Folio.</h1>
-                                </div>
-                                <div class="back-content">
-                                    <i id="port-icon-back" class="fa-solid fa-crow"></i>
-                                    <h1>ZW Folio.</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-detail" id="port-detail">
-                        <div class="detail-block">
-                            <div class="detail-content">
-                                <div class="detail-logo"></div>
-                                <div class="detail-desc">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="work" id="bubble">
-                        <div class="hover-detect" id="bubble-hover"></div>
-                        <div class="work-block">
-                            <div class="work-content" id="bubble-talk">
-                                <div class="front-content">
-                                    <i class="fa-solid fa-vr-cardboard"></i>
-                                    <h1>Bubble Talk</h1>
-                                </div>
-                                <div class="back-content">
-                                    <i class="fa-solid fa-vr-cardboard"></i>
-                                    <h1>Bubble Talk</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-detail" id="bubble-detail">
-                        <div class="detail-block">
-                            <div class="detail-content">
-                                <div class="detail-logo"></div>
-                                <div class="detail-desc">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- https://zwfolio.com/works/bubble_talk/index.html -->
-
-                    <div class="work" id="ursa">
-                        <div class="hover-detect" id="ursa-hover"></div>
-                        <div class="work-block">
-                            <div class="work-content" id="ursaworks">
-                                <div class="front-content">
-                                    <img src="./assets/ursaworks_logo_star.png" alt="">
-                                </div>
-                                <div class="back-content">
-                                    <img src="./assets/ursaworks_logo_star.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-detail" id="ursa-detail">
-                        <div class="detail-block">
-                            <div class="detail-content">
-                                <div class="detail-logo">
-                                    <img src="./assets/ursaworks_logo_star.png" alt="">
-                                </div>
-                                <div class="detail-desc">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="work">
-                        <div class="hover-detect" id="mirror-hover"></div>
-                        <div class="work-block">
-                            <div class="work-content" id="mirror">
-                                <div class="front-content">
-                                    <img src="./assets/mirror-icon.png" alt="">
-                                    <h1>MIRROR</h1>
-                                </div>
-                                <div class="back-content">
-                                    <img src="./assets/mirror-white.png" alt="">
-                                    <h1>MIRROR</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="work">
-                        <div class="hover-detect" id="mem-hover"></div>
-                        <div class="work-block">
-                            <div class="work-content" id="memorylane">
-                                <div class="front-content">
-                                    <i class="fa-solid fa-brain"></i>
-                                    <h1>MemoryLane</h1>
-                                </div>
-                                <div class="back-content">
-                                    <i class="fa-solid fa-brain"></i>
-                                    <h1>MemoryLane</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="work">
-                        <div class="hover-detect" id="kin-hover"></div>
-                        <div class="work-block">
-                            <div class="work-content" id="kinexus">
-                                <div class="front-content">
-                                    <img src="./assets/kinexus_icon.png" alt="">
-                                    <h1>KINEXUS</h1>
-                                </div>
-                                <div class="back-content">
-                                    <img src="./assets/kinexus_icon.png" alt="">
-                                    <h1>KINEXUS</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div id="about">
-                <div id="skill-block">
-                    <div class="skill-content">
-
-                        <div class="designer">
-                            <div class="design-title">
-                                <h1>DESIGN</h1>
-                            </div>
-                            <div class="design-text">
-
-                            </div>
-                        </div>
-                        <div class="developer">
-                            <div class="dev-title">
-                                <h1>DEVELOPMENT</h1>
-                            </div>
-                            <div class="dev-text">
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
         </main>
 
+        <div id="port-placeholder"></div>
+        <div id="below-content">
+            <div id="portfolio">
+                <div id="portfolio-content">
+                    <!-- bubble talk -->
+                    <a class="work" id="bubbleTalk" href="../public/works/bubble_talk/index.html">
+                        <div class="work-title">
+                            <h1>BUBBLE TALK</h1>
+                            <h2>A Mixed Reality Empowerment for the Hearing-Loss Community</h2>
+                        </div>
+                        <div class="img-slider">
+                            <div class="work-img" id="bubble-img">
+                                <img src="./assets/bubble-talk-glass.png" alt="bubbleTalkGlass">
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h1>2022</h1>
+                            <h2 class="work-type">UI/UX Design | VR Design</h2>
+                        </div>
+                    </a>
+                    <!-- ursaworks -->
+                    <a class="work" id="ursaworks" href="../public/works/ursaworks/index.html">
+                        <div class="work-title">
+                            <h1>URSAWORKS</h1>
+                            <h2>The Offical Website Template for WashU's Robomaster Team</h2>
+                        </div>
+                        <div class="img-slider">
+                            <div class="work-img" id="ursa-img">
+                                <img src="./assets/ursaworks-mockup.png" alt="ursaLogo">
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h1>2023</h1>
+                            <h2 class="work-type">Static Web Development | Web UI Design</h2>
+                        </div>
+                    </a>
+                    <!-- mirror -->
+                    <a class="work" id="mirror">
+                        <div class="work-title">
+                            <h1>MIRROR</h1>
+                            <h2>An AI Interview Simulation IOS App Powered by GPT3.0</h2>
+                        </div>
+                        <div class="work-block">
+                            <div class="work-info">
+                                <h1>2023</h1>
+                                <h2 class="work-type">IOS App Development | App UI Design</h2>
+                            </div>
+                            <div class="work-img" id="ursa-img">
+                                <img src="./assets/mirror-mockup.png" alt="mirrorMock">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- <a class="work" id="mirror">
+                    <div class="work-block">
+                        <div class="work-title">
+                            <h1>MIRROR</h1>
+                            <h2>An AI Interview Simulation IOS App Powered by GPT3.0</h2>
+                        </div>
+                        <div class="work-info">
+                            <h1>2023</h1>
+                            <h2 class="work-type">IOS App Development | App UI Design</h2>
+                        </div>
+                    </div>
+                    <div class="work-img" id="ursa-img">
+                        <img src="./assets/mirror-mockup.png" alt="mirrorMock">
+                    </div>
+                </a> -->
+                    <!-- memorylane -->
+                    <!-- <a class="work" id="memory">
+                    <div class="work-title">
+                        <h1>Memory Lane</h1>
+                        <h2>An Augmented Reality Empowered Support for Nursing of Dementia Patients</h2>
+                    </div>
+                    <div class="work-block">
+                        <div class="work-info">
+                            <h1>2023</h1>
+                            <h2 class="work-type">AR UX Design | IOS App Development</h2>
+                        </div>
+                        <div class="work-img" id="memory-img">
+                            <img src="./assets/ursaworks_logo_star-copy.png" alt="ursaLogo">
+                        </div>
+                    </div>
+                </a> -->
+                </div>
+            </div>
+
+            <div id="about">
+                <div id="breath-circle"></div>
+                <div id="about-glass">
+                    <div id="about-content">
+                        <div id="about-text">
+                            <h3>Hooray, fellow innovators!</h3>
+                            <p>
+                                This is Ziqian, a designer and developer whose passion lies in crafting
+                                elegant and intuitive user experiences through frontend web & software development.
+                            </p>
+                            <p>
+                                I am most inspired by the words of the great Bruce Lee, who once said,
+                                "be water." This quote embodies the fluidity and adaptability necessary
+                                for excellence in UX design. Just as water conforms to the shape of
+                                its container, I am always striving to understand and empathize with
+                                the user's needs and adjust my design approach accordingly.
+                            </p>
+                            <p>
+                                As a creator, I find great joy in the experience of connecting with a
+                                broader audience. The collective network of individuals that we impact
+                                and influence through our designs is like a flowing river that feeds
+                                into the vast ocean of human experience.
+                            </p>
+                            <p>
+                                With a mix of technical prowess and creativity, I am constantly pushing
+                                the boundaries of what is possible, seeking to design something that
+                                is not only beautiful, but also has a profound impact on our daily lives.
+                            </p>
+                            <p>
+                                Let's create something that will change this world forever!
+                            </p>
+                        </div>
+                        <div id="about-img">
+                        </div>
+
+                        <div id="connect">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
 
         </footer>
@@ -286,242 +297,422 @@
 
     <!-- ========== JAVASCRIPT ========== -->
     <script>
-
         //banner typing effect
         var bannerTyping = new Typed('.multitext', {
             strings: ['Developer', 'Designer', 'Artist'],
-            typeSpeed: 100,
-            backSpeed: 80,
-            backDelay: 1500,
+            typeSpeed: 120,
+            backSpeed: 100,
+            backDelay: 2000,
             loop: true,
-            showCursor: false
+            // showCursor: false
         });
+    </script>
+    <script>
+        const workElements = document.querySelectorAll('.work');
+        const portPlaceholder = document.querySelector('#port-placeholder');
 
-        //pause hover effect
-        const hoverDetect = document.querySelector('.hover-detect');
-        let hoverEnabled = true;
-        let hoverPaused = false;
+        workElements.forEach((element) => {
+            element.addEventListener('mouseover', () => {
+                portPlaceholder.style.backgroundColor = 'white';
+            });
 
-        const handleMouseEnter = () => {
-            hoverEnabled = true;
-            hoverPaused = false;
-        };
-        const handleMouseLeave = () => {
-            hoverEnabled = false;
-            if (!hoverDetect.matches(':hover')) {
-                hoverPaused = true;
+            element.addEventListener('mouseout', () => {
+                portPlaceholder.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
+
+    <script>
+        const navBar = document.querySelector('.nav-bar');
+        const homeSection = document.querySelector('#home');
+        const belowContentSection = document.querySelector('#below-content');
+        const wrapper = document.querySelector('.wrapper');
+        const scrollToTopBtn = document.querySelector('#scroll-to-top-btn');
+
+        let timeoutId;
+        let prevScrollY = window.scrollY;
+
+        function handleScroll() {
+            const belowContentSectionRect = belowContentSection.getBoundingClientRect();
+            if (belowContentSectionRect.top < window.innerHeight && belowContentSectionRect.bottom >= 0) {
+                // User is seeing below-content section
+                clearTimeout(timeoutId); // clear previous timeout
+                if (navBar.matches(':hover')) {
+                    navBar.style.opacity = 1;
+                    navBar.style.pointerEvents = 'auto';
+                    homeSection.style.marginLeft = '80px';
+                } else {
+                    timeoutId = setTimeout(() => {
+                        navBar.style.opacity = 0;
+                        navBar.style.pointerEvents = 'none';
+                        homeSection.style.marginLeft = 0; // make homeSection's margin-left 0 when navBar's opacity turns 0
+                    }, 1000);
+                }
+                scrollToTopBtn.style.opacity = 1; // set opacity to 1
+                const currScrollY = window.scrollY;
+                if (Math.abs(currScrollY - prevScrollY) > window.innerHeight / 100) {
+                    if (currScrollY < prevScrollY) {
+                        navBar.style.opacity = 1;
+                        navBar.style.pointerEvents = 'auto';
+                        homeSection.style.marginLeft = ''; // reset margin-left immediately when navbar's opacity begins turning 1
+                    } else {
+                        navBar.style.opacity = 0;
+                        navBar.style.pointerEvents = 'none';
+                    }
+                }
+                prevScrollY = currScrollY;
+            } else {
+                // User is not seeing below-content section
+                clearTimeout(timeoutId); // clear previous timeout
+                navBar.style.opacity = 1;
+                navBar.style.pointerEvents = 'auto';
+                homeSection.style.marginLeft = ''; // reset margin-left
+                scrollToTopBtn.style.opacity = 0;
             }
-            // Add the hover effects here
-            setTimeout(() => {
-                hoverEnabled = true;
-                hoverPaused = false;
-            }, 600);
+        }
+
+        function handleNavBarHover() {
+            const belowContentSectionRect = belowContentSection.getBoundingClientRect();
+            if (belowContentSectionRect.top < window.innerHeight && belowContentSectionRect.bottom >= 0) {
+                // User is seeing below-content section
+                clearTimeout(timeoutId); // clear previous timeout
+                navBar.style.display = 'block';
+                navBar.style.opacity = 1;
+                homeSection.style.marginLeft = '80px';
+                wrapper.style.marginLeft = '30px';
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        navBar.addEventListener('mouseenter', handleNavBarHover);
+        navBar.addEventListener('mouseleave', handleScroll);
+    </script>
+
+    <script>
+        const belowContent = document.querySelector('#below-content');
+        const navBarLinks = document.querySelectorAll('.nav-bar a');
+        const icons = document.querySelectorAll('.icon');
+        const inOut = document.querySelectorAll('#in, #out');
+        const labels = document.querySelectorAll('.label');
+        const footIcons = document.querySelectorAll('.foot-icon');
+        const footLabels = document.querySelectorAll('.foot-label');
+
+        function handleScroll() {
+            const belowContentRect = belowContent.getBoundingClientRect();
+            if (belowContentRect.top < window.innerHeight * 0.1) {
+                navBar.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6))';
+                navBar.style.backdropFilter = 'blur(5px)';
+                navBar.style.webkitBackdropFilter = 'blur(5px)';
+                navBar.style.transition = 'background 1s ease, backdrop-filter 1s ease, transform 0.5s ease-out';
+                navBarLinks.forEach(link => {
+                    link.style.color = 'var(--gray-color)';
+                    link.style.transition = 'color 0.2s ease';
+                });
+                inOut.forEach(el => {
+                    el.style.opacity = '1';
+                    el.style.color = 'var(--light-green)';
+                    el.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                inOut.forEach(el => {
+                    el.addEventListener('mouseenter', () => {
+                        el.style.color = 'var(--gray-color)';
+                        el.style.opacity = '1';
+                    });
+                    el.addEventListener('mouseleave', () => {
+                        el.style.color = 'var(--light-green)';
+                        el.style.opacity = '1';
+                    });
+                });
+                icons.forEach(icon => {
+                    icon.style.color = 'var(--gray-color)';
+                    icon.style.opacity = '1';
+                    icon.style.transition = 'color 0.2s ease, opacity 0.2s ease';
+                });
+                icons.forEach(icon => {
+                    icon.parentElement.addEventListener('mouseenter', () => {
+                        icon.style.color = 'var(--light-green)';
+                        icon.style.opacity = '1';
+                    });
+                    icon.parentElement.addEventListener('mouseleave', () => {
+                        icon.style.color = 'var(--gray-color)';
+                        icon.style.opacity = '1';
+                    });
+                });
+                labels.forEach(label => {
+                    label.style.opacity = '1';
+                    label.style.color = 'var(--gray-color)';
+                    label.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                labels.forEach(label => {
+                    label.parentElement.addEventListener('mouseenter', () => {
+                        label.style.color = 'var(--light-green)';
+                        label.style.opacity = '1';
+                    });
+                    label.parentElement.addEventListener('mouseleave', () => {
+                        label.style.color = 'var(--gray-color)';
+                        label.style.opacity = '1';
+                    });
+                });
+                footIcons.forEach(icon => {
+                    icon.style.opacity = '1';
+                    icon.style.color = 'var(--gray-color)';
+                    icon.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                footIcons.forEach(icon => {
+                    icon.parentElement.addEventListener('mouseenter', () => {
+                        icon.style.color = 'var(--light-green)';
+                        icon.style.opacity = '1';
+                    });
+                    icon.parentElement.addEventListener('mouseleave', () => {
+                        icon.style.color = 'var(--gray-color)';
+                        icon.style.opacity = '1';
+                    });
+                });
+                footLabels.forEach(label => {
+                    label.style.opacity = '1';
+                    label.style.color = 'var(--gray-color)';
+                    label.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                footLabels.forEach(label => {
+                    label.parentElement.addEventListener('mouseenter', () => {
+                        label.style.color = 'var(--light-green)';
+                        label.style.opacity = '1';
+                    });
+                    label.parentElement.addEventListener('mouseleave', () => {
+                        label.style.color = 'var(--gray-color)';
+                        label.style.opacity = '1';
+                    });
+                });
+            } else {
+                navBar.style.background = 'none';
+                navBar.style.backdropFilter = 'blur(15px)';
+                navBar.style.webkitBackdropFilter = 'blur(15px)';
+                navBar.style.transition = 'background 1s ease, backdrop-filter 1s ease, transform 0.5s ease-out';
+                navBarLinks.forEach(link => {
+                    link.style.color = 'white';
+                    link.style.transition = 'color 0.2s ease';
+                });
+
+                inOut.forEach(el => {
+                    el.style.opacity = '0.6';
+                    el.style.color = 'white';
+                    el.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                inOut.forEach(el => {
+                    el.addEventListener('mouseenter', () => {
+                        el.style.opacity = '1';
+                        el.style.color = 'white';
+                    });
+                    el.addEventListener('mouseleave', () => {
+                        el.style.opacity = '0.6';
+                        el.style.color = 'white';
+                    });
+                });
+
+                icons.forEach(icon => {
+                    icon.style.color = 'white';
+                    icon.style.opacity = '0.6';
+                    icon.style.transition = 'color 0.2s ease, opacity 0.2s ease';
+                });
+                icons.forEach(icon => {
+                    icon.parentElement.addEventListener('mouseenter', () => {
+                        icon.style.opacity = '1';
+                        icon.style.color = 'white';
+                    });
+                    icon.parentElement.addEventListener('mouseleave', () => {
+                        icon.style.opacity = '0.6';
+                        icon.style.color = 'white';
+                    });
+                });
+                labels.forEach(label => {
+                    label.style.opacity = '0.6';
+                    label.style.color = 'white';
+                    label.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                labels.forEach(label => {
+                    label.parentElement.addEventListener('mouseenter', () => {
+                        label.style.opacity = '1';
+                        label.style.color = 'white';
+                    });
+                    label.parentElement.addEventListener('mouseleave', () => {
+                        label.style.opacity = '0.6';
+                        label.style.color = 'white';
+                    });
+                });
+
+                footIcons.forEach(icon => {
+                    icon.style.opacity = '0.6';
+                    icon.style.color = 'white';
+                    icon.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                footIcons.forEach(icon => {
+                    icon.parentElement.addEventListener('mouseenter', () => {
+                        icon.style.opacity = '1';
+                        icon.style.color = 'white';
+                    });
+                    icon.parentElement.addEventListener('mouseleave', () => {
+                        icon.style.opacity = '0.6';
+                        icon.style.color = 'white';
+                    });
+                });
+                footLabels.forEach(label => {
+                    label.style.opacity = '0.6';
+                    label.style.color = 'white';
+                    label.style.transition = 'opacity 0.2s ease, color 0.2s ease';
+                });
+                footLabels.forEach(label => {
+                    label.parentElement.addEventListener('mouseenter', () => {
+                        label.style.opacity = '1';
+                        label.style.color = 'white';
+                    });
+                    label.parentElement.addEventListener('mouseleave', () => {
+                        label.style.opacity = '0.6';
+                        label.style.color = 'white';
+                    });
+                });
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+
+    <!-- bubble talk -->
+    <script>
+        const bubbleTalk = document.getElementById("bubbleTalk");
+        const bubbleTalkTitle = bubbleTalk.querySelector(".work-title");
+        const bubbleTalkImg = bubbleTalk.querySelector(".work-img");
+        const bubbleTalkInfo = bubbleTalk.querySelector(".work-info");
+
+        const bubbleTalkOptions = {
+            root: null,
+            threshold: 0.5,
         };
 
-        hoverDetect.addEventListener('mouseenter', handleMouseEnter);
-        hoverDetect.addEventListener('mouseleave', handleMouseLeave);
+        const bubbleTalkObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    bubbleTalkTitle.style.opacity = 1;
+                    bubbleTalkTitle.style.marginLeft = 0;
+                    bubbleTalkImg.style.opacity = 1;
+                    bubbleTalkImg.style.width = "100%";
+                    bubbleTalkInfo.style.opacity = 1;
+                    bubbleTalkInfo.style.marginLeft = 0;
+                } else {
+                    bubbleTalkTitle.style.opacity = 0;
+                    bubbleTalkTitle.style.marginLeft = "-25px";
+                    bubbleTalkImg.style.opacity = 0;
+                    bubbleTalkImg.style.width = "90%";
+                    bubbleTalkInfo.style.opacity = 0;
+                    bubbleTalkInfo.style.marginLeft = "-25px";
+                }
+            });
+        }, bubbleTalkOptions);
+
+        bubbleTalkObserver.observe(bubbleTalk);
+
+    </script>
+
+    <!-- ursaworks -->
+    <script>
+        const ursaworks = document.getElementById("ursaworks");
+        const ursaworksTitle = ursaworks.querySelector(".work-title");
+        const ursaworksImg = ursaworks.querySelector(".work-img");
+        const ursaworksInfo = ursaworks.querySelector(".work-info");
+
+        const ursaworksOptions = {
+            root: null,
+            threshold: 0.5,
+        };
+
+        const ursaworksObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    ursaworksTitle.style.opacity = 1;
+                    ursaworksTitle.style.marginLeft = 0;
+                    ursaworksImg.style.opacity = 1;
+                    ursaworksImg.style.marginRight = 0;
+                    ursaworksInfo.style.opacity = 1;
+                    ursaworksInfo.style.marginLeft = 0;
+                } else {
+                    ursaworksTitle.style.opacity = 0;
+                    ursaworksTitle.style.marginLeft = "-25px";
+                    ursaworksImg.style.opacity = 0;
+                    ursaworksImg.style.marginRight = "-25px";
+                    ursaworksInfo.style.opacity = 0;
+                    ursaworksInfo.style.marginLeft = "-25px";
+                }
+            });
+        }, ursaworksOptions);
+
+        ursaworksObserver.observe(ursaworks);
+
+    </script>
+
+    <!-- mirror -->
+    <script>
+        const mirror = document.getElementById("mirror");
+        const mirrorTitle = mirror.querySelector(".work-title");
+        const mirrorImg = mirror.querySelector(".work-img");
+        const mirrorInfo = mirror.querySelector(".work-info");
+
+        const mirrorOptions = {
+            root: null,
+            threshold: 0.5,
+        };
+        const mirrorObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    mirrorTitle.style.opacity = 1;
+                    mirrorTitle.style.marginLeft = 0;
+                    mirrorImg.style.opacity = 1;
+                    mirrorImg.style.marginRight = 0;
+                    mirrorInfo.style.opacity = 1;
+                    mirrorInfo.style.marginLeft = 0;
+                } else {
+                    mirrorTitle.style.opacity = 0;
+                    mirrorTitle.style.marginLeft = "-25px";
+                    mirrorImg.style.opacity = 0;
+                    mirrorImg.style.marginRight = "-25px";
+                    mirrorInfo.style.opacity = 0;
+                    mirrorInfo.style.marginLeft = "-25px";
+                }
+            });
+        }, mirrorOptions);
+        mirrorObserver.observe(mirror);
+    </script>
+
+    <script>
+        const circle = document.getElementById("breath-circle");
+        const about = document.getElementById("about");
+        let x = (about.clientWidth - circle.clientWidth) / 2;
+        let y = (about.clientHeight - circle.clientHeight) / 2;
+        let dx = 5;
+        let dy = -5;
+
+        circle.style.left = x + "px";
+        circle.style.top = y + "px";
 
         setInterval(() => {
-            if (!hoverDetect.matches(':hover')) {
-                if (!hoverPaused) {
-                    hoverEnabled = false;
-                    hoverPaused = true;
-                    setTimeout(() => {
-                        hoverEnabled = true;
-                        hoverPaused = false;
-                    }, 600);
-                }
+            x += dx;
+            y += dy;
+
+            if (x + circle.clientWidth > about.clientWidth || x < 0) {
+                dx = -dx;
+                circle.style.transform = "scale(0.5, 1)";
             } else {
-                hoverPaused = false;
+                circle.style.transform = "scale(1, 1)";
             }
-        }, 100);
 
-        // activate project detail
-        const detailContent = document.querySelector('.detail-content');
-        const port = document.querySelector('#port');
-        const portDetail = document.querySelector('#port-detail');
-        const bubble = document.querySelector('#bubble');
-        const bubbleDetail = document.querySelector('#bubble-detail');
-        const ursa = document.querySelector('#ursa');
-        const ursaDetail = document.querySelector('#ursa-detail');
-
-        detailContent.addEventListener('click', function (event) {
-            event.stopPropagation();
-        });
-        port.addEventListener('click', function () {
-            portDetail.style.display = 'block';
-        });
-        portDetail.addEventListener('click', function () {
-            portDetail.style.display = 'none';
-        });
-        bubble.addEventListener('click', function () {
-            bubbleDetail.style.display = 'block';
-        });
-        bubbleDetail.addEventListener('click', function () {
-            bubbleDetail.style.display = 'none';
-        });
-        ursa.addEventListener('click', function () {
-            ursaDetail.style.display = 'block';
-        });
-        ursaDetail.addEventListener('click', function () {
-            ursaDetail.style.display = 'none';
-        });
-
-        //portfolio card flip back effect delay
-        const portfolio = document.querySelector('#this-portfolio');
-        const portfolioFrontContent = document.querySelector('#portfolio .front-content');
-        const portfolioBackContent = document.querySelector('#portfolio .back-content');
-        const portfolioChildElems = portfolio.querySelectorAll('i, h1');
-        const portHover = document.querySelector('#port-hover');
-        portHover.addEventListener('mouseleave', () => {
-            portfolio.style.backgroundColor = 'var(--body-green)';
-            portfolioBackContent.style.opacity = 1;
-            portfolioFrontContent.style.opacity = 0;
-            portfolioChildElems.forEach(elem => {
-                elem.style.color = 'white';
-            });
-            setTimeout(() => {
-                portfolio.style.backgroundColor = '';
-                portfolioBackContent.style.opacity = '';
-                portfolioFrontContent.style.opacity = '';
-                portfolioChildElems.forEach(elem => {
-                    elem.style.color = '';
-                });
-            }, 300);
-        });
-
-        //ursaworks card flip back effect delay
-        const ursaworks = document.querySelector('#ursaworks');
-        const ursaworksFrontContent = document.querySelector('#ursaworks .front-content');
-        const ursaworksBackContent = document.querySelector('#ursaworks .back-content');
-        const ursaHover = document.querySelector('#ursa-hover');
-        ursaHover.addEventListener('mouseleave', () => {
-            ursaworks.style.backgroundColor = '#131317';
-            ursaworksBackContent.style.opacity = 1;
-            ursaworksFrontContent.style.opacity = 0;
-            setTimeout(() => {
-                ursaworks.style.backgroundColor = '';
-                ursaworksBackContent.style.opacity = '';
-                ursaworksFrontContent.style.opacity = '';
-            }, 300);
-        });
-
-        //bubbletalk card flip back effect delay
-        const bubbleTalk = document.querySelector('#bubble-talk');
-        const bubbleTalkFrontContent = document.querySelector('#bubble-talk .front-content');
-        const bubbleTalkBackContent = document.querySelector('#bubble-talk .back-content');
-        const bubbleTalkBackContentElements = document.querySelectorAll('#bubble-talk .back-content i, #bubble-talk .back-content h1');
-        const bubbleHover = document.querySelector('#bubble-hover');
-        bubbleHover.addEventListener('mouseleave', () => {
-            bubbleTalk.style.backgroundColor = '#ffc82f';
-            bubbleTalkBackContent.style.opacity = 1;
-            bubbleTalkFrontContent.style.opacity = 0;
-            bubbleTalkBackContentElements.forEach(element => {
-                element.style.color = 'white';
-            });
-            setTimeout(() => {
-                bubbleTalk.style.backgroundColor = '';
-                bubbleTalkBackContent.style.opacity = '';
-                bubbleTalkFrontContent.style.opacity = '';
-                bubbleTalkBackContentElements.forEach(element => {
-                    element.style.color = '';
-                });
-            }, 300);
-        });
-
-        //mirror card flip back effect delay
-        const mirror = document.querySelector('#mirror');
-        const mirrorbackContent = document.querySelector('#mirror .back-content');
-        const mirrorfrontContent = document.querySelector('#mirror .front-content');
-        const mirrorTitle = document.querySelector('#mirror .back-content h1');
-        const mirrorHover = document.querySelector('#mirror-hover');
-        mirrorHover.addEventListener('mouseleave', () => {
-            mirror.style.backgroundColor = '#434BB5';
-            mirrorbackContent.style.opacity = 1;
-            mirrorfrontContent.style.opacity = 0;
-            mirrorTitle.style.color = 'white';
-            setTimeout(() => {
-                mirror.style.backgroundColor = '';
-                mirrorbackContent.style.opacity = '';
-                mirrorfrontContent.style.opacity = '';
-                mirrorTitle.style.color = '';
-            }, 300);
-        });
-
-        //memory card flip back effect delay
-        const memory = document.querySelector('#memorylane');
-        const memorybackContent = document.querySelector('#memorylane .back-content');
-        const memoryfrontContent = document.querySelector('#memorylane .front-content');
-        const memoryBackContentElements = document.querySelectorAll('#memorylane .back-content i, #memorylane .back-content h1');
-        const memHover = document.querySelector('#mem-hover');
-        memHover.addEventListener('mouseleave', () => {
-            memory.style.backgroundColor = '#7b62e1';
-            memorybackContent.style.opacity = 1;
-            memoryfrontContent.style.opacity = 0;
-            memoryBackContentElements.forEach(element => {
-                element.style.color = 'white';
-            });
-            setTimeout(() => {
-                memory.style.backgroundColor = '';
-                memorybackContent.style.opacity = '';
-                memoryfrontContent.style.opacity = '';
-                memoryBackContentElements.forEach(element => {
-                    element.style.color = '';
-                });
-            }, 300);
-        });
-
-        //kinexus card flip back effect delay
-        const kinexus = document.querySelector('#kinexus');
-        const kinexusbackContent = document.querySelector('#kinexus .back-content');
-        const kinexusfrontContent = document.querySelector('#kinexus .front-content');
-        const kinexusTitle = document.querySelector('#kinexus .back-content h1');
-        const kinHover = document.querySelector('#kin-hover');
-        kinHover.addEventListener('mouseleave', () => {
-            kinexus.style.backgroundColor = '#3d8c8d';
-            kinexusbackContent.style.opacity = 1;
-            kinexusfrontContent.style.opacity = 0;
-            kinexusTitle.style.color = 'white';
-
-            setTimeout(() => {
-                kinexus.style.backgroundColor = '';
-                kinexusbackContent.style.opacity = '';
-                kinexusfrontContent.style.opacity = '';
-                kinexusTitle.style.color = '';
-            }, 300);
-        });
-
-        // Get the element to perform horizontal scrolling
-        // const skillBlock = document.getElementById("skill-block");
-
-        // Listen for the wheel event on the element
-        skillBlock.addEventListener("wheel", function (event) {
-            // Get the current scroll position of the element
-            const scrollPosition = skillBlock.scrollLeft;
-
-            // Calculate the amount to scroll horizontally based on the vertical or horizontal scrolling delta
-            const horizontalScrollAmount = event.deltaY;
-            const verticalScrollAmount = event.deltaX;
-
-            // Check if the user is scrolling at the start of the content and keeps scrolling up/left
-            if (scrollPosition === 0 && horizontalScrollAmount < 0 && verticalScrollAmount < 0) {
-                // Allow the default scrolling behavior for the entire webpage in the up/left direction
-                return;
+            if (y + circle.clientHeight > about.clientHeight || y < 0) {
+                dy = -dy;
+                circle.style.transform = "scale(1, 0.5)";
+            } else {
+                circle.style.transform = "scale(1, 1)";
             }
-            // Check if the user is scrolling at the end of the content and keeps scrolling down/right
-            else if (scrollPosition === skillBlock.scrollWidth - skillBlock.clientWidth && horizontalScrollAmount > 0 && verticalScrollAmount > 0) {
-                // Allow the default scrolling behavior for the entire webpage in the down/right direction
-                return;
-            }
-            // Otherwise, prevent the default scrolling behavior and scroll the element horizontally
-            event.preventDefault();
-            skillBlock.scrollTo({
-                left: scrollPosition + horizontalScrollAmount + verticalScrollAmount,
-                behavior: "smooth"
-            });
-        });
 
-
+            circle.style.left = x + "px";
+            circle.style.top = y + "px";
+        }, 50);
     </script>
 </body>
 
